@@ -2,15 +2,18 @@
 #include <iostream>
 using namespace std;
 int main() {
-    const int size = 11;
-    int evenNumbers[size];
-    for (int i = 0; i < size; ++i) {
-        evenNumbers[i] = i * 2;
+    {int ar [11];
+       int num=0;
+    for (int i = 0; i < 11; i++) 
+    {if(num%2==0) 
+    {ar[i] = num;
+            num += 2;
     }
-    cout << "Even numbers from 0 to 20:" << endl;
-    for (int i = 0; i < size; ++i) {
-        cout << evenNumbers[i] << " ";
     }
-    cout << endl;
+    for (int i = 0; i < 11; i++) {
+        cout << ar[i] << " ";
+    }
+}
     return 0;
 }
+
